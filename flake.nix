@@ -32,14 +32,6 @@
             frameworks.Security
           ]);
 
-          env = {
-            LOCALE_ARCHIVE_2_27 = "${pkgs.glibcLocales}/lib/locale/locale-archive";
-            LANG = "en_US.UTF-8";
-          };
-
-          enterShell = ''
-          '';
-
           languages.nix.enable = true;
 
           languages.rust = {
